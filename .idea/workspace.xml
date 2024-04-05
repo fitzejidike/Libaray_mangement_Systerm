@@ -4,26 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4e7ac23-3574-48f1-8e64-8ec9d8868ad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Normal_User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/PremiumUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BookRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/CatalogRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/RegisterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/RegisterUserResponse.java" afterDir="false" />
+    <list default="true" id="b4e7ac23-3574-48f1-8e64-8ec9d8868ad9" name="Changes" comment="a work in progress">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BillRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/LibarianRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/TransactionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/InvalidInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/OverdueDateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/AddBookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/BuyBookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/CreateBillRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/DeleteUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/DeletebookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/IssueBookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/SearchBookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/UpdateBookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/AddBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/CreateBillResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/DeleteBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/DeleteUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/FindBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/IssueBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/ReturnBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/SearchBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/UpdateBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/util/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/Data/repository/BookRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Catalog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Libarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Normal_User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/PremiumUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BookRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/CatalogRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/RegisterUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/RegisterUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/RegisterUserResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -45,16 +76,21 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2eYJzieLyGbG254DF0lIUXiFJv0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.org.africa.semicolon.dtos.response in Libary_Mangement_System.executor": "Profiler#1",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -64,9 +100,46 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/fitz/IdeaProjects/Libary_Mangement_System/src/main/java/org/africa/semicolon/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.africa.semicolon.dtos.requests" />
+      <recent name="org.africa.semicolon.Data.Model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.africa.semicolon.Data.repository" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="org.africa.semicolon.dtos.response in Libary_Mangement_System" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Libary_Mangement_System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.africa.semicolon.dtos.response.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.africa.semicolon.dtos.response" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.org.africa.semicolon.dtos.response in Libary_Mangement_System" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,11 +157,25 @@
       <updated>1712075845356</updated>
       <workItem from="1712075846385" duration="1386000" />
       <workItem from="1712177176911" duration="9490000" />
-      <workItem from="1712210637274" duration="7414000" />
+      <workItem from="1712210637274" duration="13634000" />
+      <workItem from="1712256768632" duration="31252000" />
     </task>
+    <task id="LOCAL-00001" summary="a work in progress">
+      <option name="closed" value="true" />
+      <created>1712230623824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712230623824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a work in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="a work in progress" />
   </component>
 </project>

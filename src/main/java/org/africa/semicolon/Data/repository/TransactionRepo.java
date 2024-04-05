@@ -1,13 +1,9 @@
 package org.africa.semicolon.Data.repository;
 
-import org.africa.semicolon.Data.Model.Book;
+import org.africa.semicolon.Data.Model.Transaction;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-
 @Repository
-public interface BookRepo extends MongoRepository<Book,String> {
-
-     Book findBookByAuthorAndTitle(String author, String title);
+public interface TransactionRepo extends MongoRepository<Transaction,String> {
 }
-

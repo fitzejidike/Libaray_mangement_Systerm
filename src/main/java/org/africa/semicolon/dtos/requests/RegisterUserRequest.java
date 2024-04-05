@@ -1,6 +1,9 @@
 package org.africa.semicolon.dtos.requests;
 
-public class RegisterUser {
+import lombok.Data;
+
+@Data
+public class RegisterUserRequest {
     private String name;
     private String number;
     private String address;
