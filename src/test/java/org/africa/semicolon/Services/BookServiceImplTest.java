@@ -5,6 +5,7 @@ import org.africa.semicolon.Data.Repositories.BookRepo;
 import org.africa.semicolon.Dtos.Requests.AddBookRequest;
 import org.africa.semicolon.Dtos.Requests.DeleteBookRequest;
 import org.africa.semicolon.Dtos.Response.DeleteBookResponse;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,13 +15,16 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class BookServiceImplTest {
     @Autowired
-    BookService bookService;
+    BookServiceImpl bookService;
 
     @Autowired
     BookRepo bookRepo;
     @Autowired
     LibrarianService librarianService;
-
+@BeforeEach
+    public void delete(){
+    bookRepo.deleteAll();
+}
     @Test
     public void testToAddABook(){
         AddBookRequest addBookRequest = new AddBookRequest();

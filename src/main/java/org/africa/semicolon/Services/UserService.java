@@ -8,7 +8,6 @@ import org.africa.semicolon.Dtos.Requests.LogoutRequest;
 import org.africa.semicolon.Dtos.Requests.RegisterUserRequest;
 import org.springframework.stereotype.Service;
 
-@Service
 public interface UserService {
     User Login(LoginRequest loginRequest);
     Void Logout(LogoutRequest logoutRequest);

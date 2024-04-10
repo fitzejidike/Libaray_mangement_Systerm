@@ -4,7 +4,6 @@ import org.africa.semicolon.Data.Models.Bill;
 import org.africa.semicolon.Dtos.Requests.IssueBillRequest;
 import org.springframework.stereotype.Service;
 
-@Service
 public interface BillService {
     Bill IssueBill(IssueBillRequest issueBillrequest);
 

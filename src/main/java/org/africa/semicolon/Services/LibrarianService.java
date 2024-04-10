@@ -6,7 +6,7 @@ import org.africa.semicolon.Data.Models.Librarian;
 import org.africa.semicolon.Dtos.Requests.*;
 import org.springframework.stereotype.Service;
 
-@Service
+
 public interface LibrarianService {
     Librarian login(LoginRequest loginRequest);
     Book searchBook(FindBookRequest findBookRequest);

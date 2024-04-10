@@ -6,7 +6,7 @@ import org.africa.semicolon.Dtos.Response.DeleteAllBookResponse;
 import org.africa.semicolon.Dtos.Response.DeleteBookResponse;
 import org.springframework.stereotype.Service;
 
-@Service
+
 public interface BookService {
 
     Book addBook(AddBookRequest addBookRequest);
