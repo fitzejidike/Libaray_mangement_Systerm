@@ -1,6 +1,7 @@
 package org.africa.semicolon.Services;
 
 import org.africa.semicolon.Data.Model.Book;
+import org.africa.semicolon.Data.Model.Genre;
 import org.africa.semicolon.dtos.requests.AddBookRequest;
 import org.africa.semicolon.dtos.requests.IssueBookRequest;
 import org.africa.semicolon.dtos.requests.SearchBookRequest;

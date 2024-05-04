@@ -7,5 +7,5 @@ import org.africa.semicolon.Data.Model.Genre;
 public class DeletebookRequest {
     private String authorName;
     private String title;
-    private Genre genre;
+
 }

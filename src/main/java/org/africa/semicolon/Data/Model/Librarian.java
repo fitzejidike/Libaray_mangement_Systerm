@@ -5,8 +5,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document("Libarian")
-public class Libarian {
+@Document("Librarian")
+public class Librarian
+{
     private String name;
     private String password;
     @Id

@@ -1,14 +1,12 @@
 package org.africa.semicolon.Services;
 
-import lombok.Data;
-import org.africa.semicolon.Data.Model.Book;
 import org.africa.semicolon.dtos.requests.AddBookRequest;
 import org.africa.semicolon.dtos.requests.DeletebookRequest;
-import org.africa.semicolon.dtos.requests.SearchBookRequest;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public interface BookServices {
-    Book addBook(AddBookRequest addBookRequest);
-    void  deleteBook(DeletebookRequest deletebookRequest);
-    Book searchBook(SearchBookRequest searchBookRequest);
+    void addBook(AddBookRequest addBookRequest);
+    void deleteBook(DeletebookRequest deletebookRequest);
+
 }

@@ -4,19 +4,23 @@ import org.africa.semicolon.Data.Model.Bill;
 import org.africa.semicolon.Data.Model.Book;
 import org.africa.semicolon.Data.repository.BillRepo;
 import org.africa.semicolon.Data.repository.BookRepo;
+import org.africa.semicolon.Execption.BookNotFoundException;
 import org.africa.semicolon.dtos.requests.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class LibrarianServiceImpl implements LibrarianServices{
+@Service
+public class LibrarianServiceImpl implements LibrarianServices {
+    @Autowired
     private BookRepo bookRepo;
+    @Autowired
     private BillRepo billrepo;
 
 
     @Override
     public Book searchBook(SearchBookRequest searchBookRequest) {
-        Book book = new Book();
+        return bookRepo.findBookByTitle(searchBookRequest.getTitle());
 
-
-        return null;
     }
 
 
@@ -31,7 +35,7 @@ public class LibrarianServiceImpl implements LibrarianServices{
     }
 
     @Override
-    public Book addBook(AddBookRequest addBookRequest) {
+    public Book AddBookResponse(AddBookRequest addBookRequest) {
         Book book = new Book();
         book.setAuthor(addBookRequest.getAuthor());
         book.setTitle(addBookRequest.getTitle());
@@ -39,6 +43,16 @@ public class LibrarianServiceImpl implements LibrarianServices{
         bookRepo.save(book);
         return book;
 
+    }
+
+    @Override
+    public Void deleteBookByTitle(DeletebookRequest deletebookRequest) {
+        Book book = bookRepo.findBookByTitle(deletebookRequest.getTitle());
+        if (book == null) throw new BookNotFoundException("book not found");
+        bookRepo.delete(book);
+        return null;
 
     }
+
+
 }

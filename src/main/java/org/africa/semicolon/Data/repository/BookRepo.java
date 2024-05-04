@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BookRepo extends MongoRepository<Book,String> {
 
-     Book findBookByAuthorAndTitle(String author, String title);
+     Book findBookByTitle(String title);
 }
 

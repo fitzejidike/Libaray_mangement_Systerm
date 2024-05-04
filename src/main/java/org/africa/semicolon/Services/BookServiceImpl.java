@@ -1,14 +1,22 @@
 package org.africa.semicolon.Services;
 
 import org.africa.semicolon.Data.Model.Book;
+import org.africa.semicolon.Data.repository.BookRepo;
 import org.africa.semicolon.dtos.requests.AddBookRequest;
 import org.africa.semicolon.dtos.requests.DeletebookRequest;
-import org.africa.semicolon.dtos.requests.SearchBookRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import static org.africa.semicolon.util.Mapper.map;
+
+@Service
 public class BookServiceImpl implements BookServices{
+    @Autowired
+    private BookRepo bookrepo;
     @Override
-    public Book addBook(AddBookRequest addBookRequest) {
-        return null;
+    public void addBook(AddBookRequest addBookRequest) {
+        Book book = map(addBookRequest);
+        bookrepo.save(book);
     }
 
     @Override
@@ -16,8 +24,12 @@ public class BookServiceImpl implements BookServices{
 
     }
 
-    @Override
-    public Book searchBook(SearchBookRequest searchBookRequest) {
-        return null;
-    }
+//    @Override
+//    public DeleteBookResponse deleteBook(DeletebookRequest deletebookRequest) {
+//      return Mapper.deleteBook(deletebookRequest,bookrepo);
+//    }
+
 }
+
+
+

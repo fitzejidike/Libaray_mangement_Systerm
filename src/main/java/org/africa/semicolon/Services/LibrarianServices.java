@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 public interface LibrarianServices {
 
     Book searchBook(SearchBookRequest searchBookRequest);
+
     Bill createBill(CreateBillRequest createBillRequest);
-    Book  addBook(AddBookRequest addBookRequest);
+
+    Book AddBookResponse(AddBookRequest addBookRequest);
+
+    Void deleteBookByTitle(DeletebookRequest deletebookRequest);
 }
