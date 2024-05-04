@@ -21,13 +21,9 @@ public class BookServiceImpl implements BookServices{
 
     @Override
     public void deleteBook(DeletebookRequest deletebookRequest) {
+        Book book = bookrepo.findBookByTitle(deletebookRequest.getTitle());
 
     }
-
-//    @Override
-//    public DeleteBookResponse deleteBook(DeletebookRequest deletebookRequest) {
-//      return Mapper.deleteBook(deletebookRequest,bookrepo);
-//    }
 
 }
 
