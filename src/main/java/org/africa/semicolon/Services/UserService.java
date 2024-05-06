@@ -10,8 +10,5 @@ import org.springframework.stereotype.Service;
 @Service
 public interface UserService {
     Book searchBook(SearchBookRequest searchBookRequest);
-    Book bookPurchase();
-    Book ReadBook();
-
 
 }

@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4e7ac23-3574-48f1-8e64-8ec9d8868ad9" name="Changes" comment="a work in progress">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Controler/UserControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/TransactionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/BuyBookResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/Services/BookServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/applicaion.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Libarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/Librarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/BookRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/LibarianRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/repository/LibrarianRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/BookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/BookNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/InvalidInputException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/OverdueDateException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Execption/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/FitzLibary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/BookServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/LibrarianServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Data/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/Services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/BuyBookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/BuyBookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/DeletebookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/requests/DeletebookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/AddBookResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/dtos/response/AddBookResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/africa/semicolon/util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/Data/repository/BookRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/africa/semicolon/Data/repository/BookRepoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -221,7 +197,8 @@
       <workItem from="1712700412268" duration="1561000" />
       <workItem from="1712828740870" duration="603000" />
       <workItem from="1714469496405" duration="599000" />
-      <workItem from="1714688687663" duration="1611000" />
+      <workItem from="1714688687663" duration="3750000" />
+      <workItem from="1714919371821" duration="2902000" />
     </task>
     <task id="LOCAL-00001" summary="a work in progress">
       <option name="closed" value="true" />
@@ -239,11 +216,38 @@
       <option name="project" value="LOCAL" />
       <updated>1712343510099</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="a work in progress">
+      <option name="closed" value="true" />
+      <created>1714780897405</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714780897405</updated>
+    </task>
+    <task id="LOCAL-00004" summary="a work in progress">
+      <option name="closed" value="true" />
+      <created>1714781472733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714781472734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a work in progress" />

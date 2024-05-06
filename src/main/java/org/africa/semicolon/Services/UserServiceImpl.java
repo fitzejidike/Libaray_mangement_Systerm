@@ -15,17 +15,7 @@ public class UserServiceImpl implements UserService {
     public Book searchBook(SearchBookRequest searchBookRequest) {
         return bookRepo.findBookByTitle(searchBookRequest.getTitle());
     }
-    @Override
-    public Book bookPurchase() {
 
-        return null;
-    }
-
-    @Override
-    public Book ReadBook() {
-
-        return null;
-    }
 
 
 }
